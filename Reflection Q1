@@ -1,0 +1,14 @@
+1. Why did you use inheritance?
+Inheritance was used because all transport types are Vehicles. It allows them to share a common base class and be treated polymorphically.
+
+2. Why did you use interfaces?
+Interfaces represent capabilities such as driving, flying, and sailing. Different vehicles can implement only the abilities they support.
+
+3. Could Helicopter inherit from both Vehicle and Airplane? Why or why not?
+No. C# supports only single inheritance, so a class can inherit from only one base class.
+
+4. Why can Helicopter implement both IFlyable and IDriveable?
+Because C# allows a class to implement multiple interfaces, enabling it to have multiple capabilities.
+
+5. If a Submarine can both sail and dive, how would you design it?
+I would create an IDiveable interface and have Submarine inherit from Vehicle while implementing both ISailable and IDiveable.
